@@ -1,0 +1,39 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="cs.css"/>
+	<script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.1/dojo/dojo.js"></script>
+	<style type="text/css">
+		/* bring in the lightbox CSS */
+		@import "http://ajax.googleapis.com/ajax/libs/dojo/1.9.1/dijit/themes/tundra/tundra.css";
+		@import "http://ajax.googleapis.com/ajax/libs/dojo/1.9.1/dojox/image/resources/Lightbox.css";
+	</style>
+	<script src="cs.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		dojo.require("dojo.parser");
+		dojo.require("dojo.fx");
+		dojo.addOnLoad( ttw.initialize );
+	</script>
+</head>
+<body class="tundra">
+	<div id="menu">
+		<span class="menuItem" id="menuSection1"><img id="menu-home" section="home" url="content/home.html" src="images/menu/home.png"/></span>
+		<span class="menuItem" id="menuSection3"><img id="menu-ears" section="ears" url="content/ears.html" src="images/menu/ears.png"/></span>
+		<span class="menuItem" id="menuSection4"><img id="menu-brain" section="brain" url="content/marvin.html" src="images/menu/brain.png"/></span>
+		<span class="menuItem" id="menuSection5"><img id="menu-mouth" section="mouth" url="content/mouth.html" src="images/menu/mouth.png"/></span>
+		<span class="menuItem" id="menuSection2"><img id="menu-info" section="info" url="content/info.html" src="images/menu/info.png"/></span>
+		<div id="preloaderIcon"></div>
+	</div>
+	<div id="ears-submenu" class="submenu">
+		<span class="menuItem" id="menuSection10"><img id="menu-tsk" section="tsk" url="content/ears.html" src="images/menu/tsk.png"/></span>
+		<span class="menuItem" id="menuSection7"><img id="menu-q" section="q" url="content/q.html" src="images/menu/q.png"/></span>
+		<span class="menuItem" id="menuSection6"><img id="menu-tape" section="tape" url="content/tape.html" src="images/menu/tape.png"/></span>
+		<span class="menuItem" id="menuSection8"><img id="menu-bubbles" section="bubbles" url="content/bubbles.html" src="images/menu/bubbles.png"/></span>
+		<span class="menuItem" id="menuSection9"><img id="menu-midiworm" section="midiworm" url="content/midiworm.html" src="images/menu/midiworm.png"/></span>
+	</div>
+
+	<div id="mainContent">
+		<div id="preloader"></div>
+		<div id="content"></div>
+	</div>
+</body>
+</html>

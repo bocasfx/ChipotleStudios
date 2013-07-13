@@ -1,0 +1,210 @@
+
+body {
+	margin: 0 auto;
+	font-size: 14px;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+#mainContainer {
+	margin: 0 auto;
+	background:#fff;
+}
+
+
+#preloader {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	top: 34px;
+	left: 0;
+    position: absolute;
+    z-index: 999;
+	display: none;	
+	background: #fff;	
+}
+
+/*#preloaderIcon {
+	width: 40px;
+	height: 13px; 
+	padding: 0;
+    position: absolute;
+    z-index: 999;
+	display: none;	
+	background: #fff url(images/squares.gif) no-repeat top left;	
+}*/
+
+/* Menu ------------------------------------------------------------------*/
+
+#menu {
+	background-color: #b4008d;
+	height: 34px;
+	visibility: visible;
+}
+
+.submenu {
+	background-color: #EEE;
+	height: 0;
+	visibility: hidden;
+}
+
+.menuItem {
+	font-weight: bold;
+	font-family: sans-serif;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+/* Content ----------------------------------------------------------------*/
+
+#mainContent {
+	overflow: auto;
+	background-color: #fff;
+}
+
+#content {
+	height: 100%;
+	width: 100%;
+}
+
+.section {
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+}
+
+.separator {
+	padding:20px;
+}
+
+.bandcamp {
+	padding-top: 40px;
+	width: 400px;
+	display: block;
+	margin: 0 auto;
+}
+
+.vimeo {
+	padding-top: 40px;
+	display: block;
+	margin: 0 auto;
+}
+
+.subtitle {
+	margin: 0 auto;
+	display: block;
+	height: 30px;
+}
+
+.download-button {
+	margin-top: 40px;
+}
+
+.logo {
+	margin: 0 auto;
+	margin-bottom: 40px;
+	display: block;
+	width: 354px;
+	height: 235px;
+	background: #fff url(images/logo.png) no-repeat top left;
+}
+
+.coming-soon {
+	margin: 0 auto;
+	margin-top: 100px;
+	display: block;
+	width: 175px;
+	height: 72px;
+	background: #fff url(images/coming-soon.png) no-repeat top left;
+}
+
+/* The Sofa Kings -------------------------------------------------------------------------------- */
+
+#ears-title {
+	margin: 40 auto 40 auto;
+	display: block;
+	height: 65px;
+	width: 211px;
+	background: #fff url(images/ears/title.png) no-repeat top left;
+}
+
+.sofa-kings-table {
+	margin: 30px auto 0 auto;
+	text-align: center;
+}
+
+.table-spacer {
+	height: 30px;
+}
+
+.project-description {
+	margin: 0 auto;
+	display: block;
+	width: 600px;
+	text-align: justify;
+	text-justify:inter-word;
+}
+
+.sofa-kings-separator {
+	height: 40px;
+}
+
+/* Marvin -------------------------------------------------------------------------------- */
+
+#marvin-title {
+	margin: 40 auto 40 auto;
+	display: block;
+	height: 65px;
+	width: 110px;
+	background: #fff url(images/brain/marvin-title.png) no-repeat top left;
+}
+
+/* Q -------------------------------------------------------------------------------- */
+
+#q-title {
+	margin: 40 auto 40 auto;
+	display: block;
+	height: 65px;
+	width: 41px;
+	background: #fff url(images/ears/q-title.png) no-repeat top left;
+}
+
+/* Tape -------------------------------------------------------------------------------- */
+
+#tape-title {
+	margin: 40 auto 40 auto;
+	display: block;
+	height: 65px;
+	width: 101px;
+	background: #fff url(images/ears/tape-title.png) no-repeat top left;
+}
+
+.tape-logo {
+	margin: 40 auto 40 auto;
+	display: block;
+	height: 300px;
+	width: 400px;
+	background: #fff url(images/ears/tape.png) no-repeat top left;
+}
+
+/* Bubbles -------------------------------------------------------------------------------- */
+
+#bubbles-title {
+	margin: 40 auto 40 auto;
+	display: block;
+	height: 65px;
+	width: 108px;
+	background: #fff url(images/ears/bubbles-title.png) no-repeat top left;
+}
+
+/* MidiWorm -------------------------------------------------------------------------------- */
+
+#midiworm-title {
+	margin: 40 auto 40 auto;
+	display: block;
+	height: 65px;
+	width: 148px;
+	background: #fff url(images/ears/midiworm-title.png) no-repeat top left;
+}
