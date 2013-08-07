@@ -7,6 +7,7 @@ $(document).ready(function() {
 	$('.navbar-brand').on('click', csapp.showHome);
 
 	csapp.showHome();
+	$('#courtain').fadeOut(1000);
 	console.log("Ready");
 })
 
@@ -23,28 +24,35 @@ CSApp.prototype = function() {
 	},
 
 	navigate = function( event ) {
+		var caller = this;
 		$('.navbar-nav li').removeClass('active');
-		$(this).addClass('active');
-		$('#csmain').empty();
+		$(caller).addClass('active');
+		$('#courtain').fadeIn(1000, function() {
+			
+			$('#csmain').empty();
 
-		var section = $(this).text();
-		switch(section) {
-			case 'Ears':
-				csapp.showEars();
-				break;
-			case 'Brain':
-				csapp.showBrain();
-				break
-			case 'Mouth':
-				csapp.showMouth();
-				break
+			var section = $(caller).text();
+			switch(section) {
+				case 'Ears':
+					csapp.showEars();
+					break;
+				case 'Brain':
+					csapp.showBrain();
+					break
+				case 'Mouth':
+					csapp.showMouth();
+					break
 
-			case 'Info':
-				csapp.showInfo();
-				break
-			default:
-				break;
-		}
+				case 'Info':
+					csapp.showInfo();
+					break
+				default:
+					break;
+			}
+			console.log('fadeout');
+			$('#courtain').fadeOut(1000);
+		});
+		
 	},
 
 	showEars = function() {

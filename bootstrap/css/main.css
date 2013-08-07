@@ -100,7 +100,7 @@ textarea {
 
 .navbar-brand {
     color: #fff;
-    margin-top: 6px;
+    /*margin-top: 6px;*/
 }
 
 .navbar-brand:hover {
@@ -120,6 +120,7 @@ textarea {
 
 .navbar-nav>li>a {
     color: #fff;
+    font-size: 10pt;
 }
 
 .navbar-nav>li>a:hover {
@@ -130,6 +131,13 @@ textarea {
 .center {
     margin: 0 auto;
     display: block;
+}
+
+.courtain {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
 }
 
 
