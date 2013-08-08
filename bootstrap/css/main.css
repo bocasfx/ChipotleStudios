@@ -24,6 +24,10 @@ body {
     padding: 70px 0 70px 0;
 }
 
+p {
+    font-size: 10pt;
+}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -100,7 +104,7 @@ textarea {
 
 .navbar-brand {
     color: #fff;
-    margin-top: 6px;
+    margin-top: -2px;
 }
 
 .navbar-brand:hover {
@@ -109,7 +113,7 @@ textarea {
 
 .navbar-nav>.active>a {
     color: #333;
-    background-color: #fff
+    background-color: #fff;
 }
 
 .navbar-nav>.active>a:hover {
@@ -120,6 +124,7 @@ textarea {
 
 .navbar-nav>li>a {
     color: #fff;
+    font-size: 11pt;
 }
 
 .navbar-nav>li>a:hover {
@@ -130,6 +135,10 @@ textarea {
 .center {
     margin: 0 auto;
     display: block;
+}
+
+.topmargin {
+    margin-top: 30px;
 }
 
 
