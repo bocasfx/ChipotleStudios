@@ -7,6 +7,7 @@ $(document).ready(function() {
 	$('.navbar-brand').on('click', csapp.showHome);
 
 	csapp.showHome();
+	$('#courtain').fadeOut(1000);
 	console.log("Ready");
 });
 
@@ -16,28 +17,41 @@ var CSApp = function() {
 
 CSApp.prototype = function() {
 
-	var navigate = function( event ) {
-		$('.navbar-nav li').removeClass('active');
-		$(this).addClass('active');
-		$('#csmain').empty();
 
-		var section = $(this).text();
-		switch(section) {
-			case 'Ears':
-				csapp.showEars();
-				break;
-			case 'Brain':
-				csapp.showBrain();
-				break;
-			case 'Mouth':
-				csapp.showMouth();
-				break;
-			case 'Info':
-				csapp.showInfo();
-				break;
-			default:
-				break;
-		}
+	var showHome = function() {
+		$('#csmain').empty();
+		$('.navbar-nav li').removeClass('active');
+		$('#csmain').append('<img class="center img-responsive" src="img/home.png"/>');
+	},
+
+	navigate = function( event ) {
+		var caller = this;
+		$('.navbar-nav li').removeClass('active');
+		$(caller).addClass('active');
+		$('#courtain').fadeIn(1000, function() {
+			
+			$('#csmain').empty();
+			var section = $(caller).text();
+			switch(section) {
+				case 'Ears':
+					csapp.showEars();
+					break;
+				case 'Brain':
+					csapp.showBrain();
+					break
+				case 'Mouth':
+					csapp.showMouth();
+					break
+
+				case 'Info':
+					csapp.showInfo();
+					break
+				default:
+					break;
+			}
+			console.log('fadeout');
+			$('#courtain').fadeOut(1000);
+		});
 	},
 
 	showHome = function() {
