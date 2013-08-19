@@ -104,7 +104,6 @@ textarea {
 
 .navbar-brand {
     color: #fff;
-    margin-top: -2px;
 }
 
 .navbar-brand:hover {
@@ -142,6 +141,15 @@ textarea {
     height: 100%;
     background-color: white;
     position: absolute;
+    z-index: 999;
+}
+
+.topmargin {
+    margin-top: 40px;
+}
+
+.sectionTitle {
+    color: #B4008D;
 }
 
 
